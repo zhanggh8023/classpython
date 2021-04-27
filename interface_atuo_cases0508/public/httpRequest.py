@@ -9,170 +9,304 @@ import json, time
 from conf import Allpath
 from public.logger import Log
 from public.get_mysql_info import getMysqlInfo
+from public.all_method import message_code, qyzq_msg_code, get_f_login_cookie, lock_time, time_version, set_user_token, \
+    set_admin_token, data_time_replace, projectenv
 
-logger = Log('auto_cases', Allpath.log_path)
-
-
-# 登录获取客服cookie
-def get_login_cookie():
-    url1 = "http://47.110.131.231/v1/staff/login"
-    data1 = {"username": "emhhbmcwMDE=", "password": "MTIzNDU2", "forceFlag": "true"}
-    session = requests.Session()
-    request = requests.post(url1, data1).json()
-    logger.info("客服登录请求返回：%s" % request)
-    cookie_jar = session.post(url1, data1).cookies
-    # print(cookie_jar)
-    cookie = requests.utils.dict_from_cookiejar(cookie_jar)
-    logger.info("客服返回cookie：%s" % cookie)
-    return cookie
-
-
-# 登录获取客户cookie
-def get_login_khcookie():
-    url1 = "http://47.110.131.231/v1/tenants/_1NTMWLA/sessions"
-    data1 = {"windowId": "WIN00000001", "os": 'null', "device": 'null', "channel": "pc", "msg_signature": "",
-             "timestamp": "", "nonce": "", "userinfo": "", "ip": "", "browserid": ""}
-    session = requests.Session()
-    cookie_jar = session.post(url1, json=data1).cookies
-    # print(cookie_jar)
-    cookie = requests.utils.dict_from_cookiejar(cookie_jar)
-    logger.info("客户返回cookie：%s" % cookie)
-    return cookie
-
-
-# 退出登录
-def get_logout(url, data, headers):
-    # body格式
-    request = requests.post(url, json=data, headers=headers).json()
-    logger.info('调用退出请求成功%s' % request)
-    return request
+logger = Log('httpRequest', Allpath.log_path)
 
 
 class httpRequest:
-    def httpGet(self, url, method, data, sql):
-        global request
-        headers = {"Host": "47.110.131.231", "Connection": "keep-alive", "Origin": "http://47.110.131.231",
-                   "X-TraceId": "b2486a20-a9d1-11e9-a2b4-5fa2b013c14c",
-                   "Referer": "http://47.110.131.231/customerService/SystemManagement/Online", }
-        header = {"Host": "47.110.131.231", "Connection": "keep-alive", "Origin": "http://47.110.131.231",
-                  "X-TraceId": "b2486a20-a9d1-11e9-a2b4-5fa2b013c14c",
-                  "Referer": "http://47.110.131.231/customerService/SystemManagement/Online", }
-        oo = get_login_cookie()
-        pp = get_login_khcookie()
-        headers["Cookie"] = 's_authorization=' + oo["s_authorization"]
-        header["Cookie"] = 'v_authorization=' + pp["v_authorization"]
-        # headers["Content-Type"] = "application/json"
-        logger.info("当前客服headers配置：%s" % headers)
-        logger.info("当前客客户header配置：%s" % header)
 
-        if method == 'GET':
-            logger.info('现在开始进行get请求')
-            request = requests.get(url, data, headers=headers).json()
-        elif method == 'GET_kh':
-            logger.info('现在开始进行GET_kh请求')
-            if data['1'] == 1:
-                sql_result = getMysqlInfo(Allpath.db_conf_path, "config").get_mysql_info(sql['my_sql'],
-                                                                                         sql['condition'],
-                                                                                         sql['code'])
-                url1 = url % str(sql_result[sql['1']])
-                logger.info('现在开始进行数据库请求获取：{},当前请求地址：{}'.format(sql_result, url1))
-                request = requests.get(url1, data, headers=header).json()
-            elif data['1'] == 0:
-                # print(header)
-                request = requests.get(url, headers=header).json()
+    def httpGet(self, url, method, data, sql, env):
+        # global request
+        if 'env' in env.keys() and env['env'] == 1:
+            if 'stationId' in env.keys():
+                headers = set_user_token(stationId=env['stationId'])
             else:
-                request = requests.get(url, data, headers=headers).json()
+                headers = set_user_token(stationId='HL99998')
+        elif 'env' in env.keys() and env['env'] in [2, 3, 4]:
+            headers = set_admin_token()
+        else:
+            headers = get_f_login_cookie()
 
+        if 'lock' in env.keys():
+            data = data_time_replace(data, env)
 
-        elif method == 'POST_kh':
-            logger.info('现在开始进行POST_kh请求')
-            data['from'] = pp["visitor_id"]
-            print(data)
-            # body格式
-            request = requests.post(url, json=data, headers=header).json()
-            request['code'] = request['data']['message']
+        # 去除安全证书告警
+        requests.packages.urllib3.disable_warnings()
+        if method == 'GET':
+            logger.info('现在开始进行GET方法调用请求')
+            if 'sms' in env.keys() and env['sms'] == 1:
+                # 短信验证码返回替换，五分钟短信验证
+                data["valicode"] = message_code()
+                data["verifycode"] = data["valicode"]
+                time.sleep(0.5)
+            elif 'sms' in env.keys() and env['sms'] == 2:
+                # 企业直签短信验证码返回替换，五分钟短信验证
+                data["valicode"] = qyzq_msg_code()
+                time.sleep(0.5)
+            if 'my_sql' in sql.keys() and env['get'] == 1:
+                logger.info('现在开始进行get请求')
+                sql_result = getMysqlInfo(projectenv[1]).get_mysql_info(sql['my_sql'],
+                                                                        sql['condition'], sql['code'])
+                logger.info('get中数据库返回：{}'.format(sql_result))
+                if sql['sql'] == 0:
+                    data['reportIds'] = sql_result[1]
+                    request = requests.get(url, data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【reportIds替换】get,参数格式请求：{},请求返回：{}'.format(data, request))
+
+                elif sql['sql'] == 1:
+                    data['reserveId'] = sql_result[1]
+                    data['userCardId'] = sql_result[1]
+                    request = requests.get(url, data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【reserveId替换】get,参数格式请求：{},请求返回：{}'.format(data, request))
+                    request['code'] = str(request['result'])
+                    if request['result'] != True and request['result'] != False:
+                        request['code'] = str(request['result']['data'])
+
+                elif sql['sql'] == 2:
+                    url = url + str(sql_result[1])
+                    request = requests.get(url, data, headers=headers, verify=False).json()
+                    request['code'] = str(request['result']['pkgId']) + str(request['result']['reserveDay']) + str(
+                        request['result']['additionNames'])
+                    logger.info('现在开始进行【reserveId,url替换】get,参数格式请求{},请求返回【配置后套餐、时间、名称】code：{}'.format(data, request))
+
+                elif sql['sql'] == 3:
+                    url = url + str(sql_result[1])
+                    request = requests.get(url, data, headers=headers, verify=False).json()
+                    # 状态 0:未支付, 10:待预约, 20: 待确认, 30:待体检 40: 同步失败, 50: 已完成
+                    request['code'] = str(request['result']['serviceStatus'])
+                    logger.info('现在开始进行【reserveId,url替换】get,参数格式请求{},请求返回【配置后预约状态id】code：{}'.format(data, request))
+
+                elif sql['sql'] == 4:
+                    url = url + str(sql_result[1])
+                    request = requests.get(url, data, headers=headers, verify=False).json()
+                    if env['pay'] == 1:
+                        request['code'] = '优惠券抵扣:' + str(request['result']['orderInfoList'][2]['value']) + '实付款:' + str(
+                            request['result']['orderInfoList'][3]['value']) + '支付款:' + str(
+                            request['result']['payInfo'][1]['value'])
+                    elif env['pay'] == 2:
+                        request['code'] = '优惠券抵扣:' + str(request['result']['orderInfoList'][3]['value']) + '实付款:' + str(
+                            request['result']['orderInfoList'][4]['value']) + '体检卡:' + str(
+                            request['result']['orderInfoList'][2]['value'])
+                    elif env['pay'] == 3:
+                        request['code'] = '支付方式:' + str(request['result']['payInfo'][0]['value']) + '实付款:' + str(
+                            request['result']['orderInfoList'][2]['value']) + '支付款:' + str(
+                            request['result']['payInfo'][1]['value'])
+                    elif env['pay'] == 4:
+                        request['code'] = '支付方式:' + str(request['result']['payInfo'][0]['value']) + '实付款:' + str(
+                            request['result']['orderInfoList'][1]['value']) + '支付款:' + str(
+                            request['result']['payInfo'][1]['value'])
+
+                    else:
+                        request['code'] = '支付方式:' + str(request['result']['payInfo'][0]['value']) + '实付款:' + str(
+                            request['result']['orderInfoList'][2]['value']) + '支付款:' + str(
+                            request['result']['payInfo'][2]['value'])
+
+                    logger.info(
+                        '现在开始进行【订单trade_id,url替换】get,参数格式请求{},请求返回【配置后优惠券、实付款、支付款】code：{}'.format(data, request))
+
+                else:
+                    request = requests.get(url, data, headers=headers, verify=False).json()
+                    logger.info('请求返回：{}'.format(request))
+
+            else:
+                request = requests.get(url, data, headers=headers, verify=False).json()
+                logger.info('请求返回：{}'.format(request))
 
         elif method == 'POST':
-            logger.info('现在开始进行post请求')
-            # body格式
-            request = requests.post(url, json=data, headers=headers).json()
+            if 'sql' in sql.keys() and env['sql'] == 1:
+                logger.info('现在开始进行post请求')
+                sql_result = getMysqlInfo(projectenv[1]).get_mysql_info(sql['my_sql'],
+                                                                        sql['condition'], sql['code'])
+                logger.info('post中数据库返回：{}'.format(sql_result))
+                if sql['sql'] == 0:
+                    data['userName'] = sql_result[1]
+                    request = requests.post(url, json=data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【userName替换】post,body格式请求{},请求返回：{}'.format(data, request))
 
-        elif method == 'POST_file':
-            logger.info('现在开始进行post_file请求')
-            path = Allpath.project_path + "/request_file/" + sql['filename']
-            print(sql['name'], headers, path)
-            files = {sql['name']: (sql['filename'], open(path, 'rb'))}
-            # body格式
-            request = requests.post(url, data=data, files=files, headers=headers).json()
+                elif sql['sql'] == 1:
+                    data['id'] = sql_result[1]
+                    request = requests.post(url, data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【id替换】post,参数格式请求{},请求返回：{}'.format(data, request))
 
-        elif method == 'POST1':
-            logger.info('现在开始进行post1请求')
-            # 参数格式
-            request = requests.post(url, data, headers=headers).json()
-            print(headers)
+                elif sql['sql'] == 2:
+                    url = url + sql_result[1]
+                    request = requests.post(url, data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【地址拼接】post,参数格式请求{},请求返回：{}'.format(data, request))
 
-        elif method == 'POST2':
-            logger.info('现在开始进行post2请求')
-            # 参数格式
-            request = requests.post(url, headers).json()
+                elif sql['sql'] == 3:
+                    data['tradeId'] = sql_result[1]
+                    data['thirdpartTradeId'] = sql_result[2]
+                    request = requests.post(url, json=data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【模拟支付tradeId，thirdpartTradeId替换】post,参数格式请求{},请求返回：{}'.format(data, request))
 
-        elif method == 'POST_word':
-            logger.info('现在开始进行post_word请求')
-            request = {}
-            # 参数格式,返回的是字符串格式
-            text = requests.post(url, data, headers).text
-            request['code'] = text
+                elif sql['sql'] == 4:
+                    a = eval(data['ext'])
+                    a['groupUserCardId'] = sql_result[1]
+                    data['ext'] = a
+                    logger.info('现在开始进行【团检卡groupUserCardId替换】post,参数格式请求')
+                    request = requests.post(url, json=data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【团检卡groupUserCardId替换】post,参数格式请求{},请求返回：{}'.format(data, request))
 
-        elif method == 'POST_del':
-            logger.info('现在开始进行post_del请求')
-            sql_result = getMysqlInfo(Allpath.db_conf_path, "config").get_mysql_info(sql['my_sql'], sql['condition'],
-                                                                                     sql['code'])
-            logger.info('post删除数据库返回：' + str(sql_result))
-            data['id'] = sql_result[0]
-            # body格式
-            request = requests.post(url, json=data, headers=headers).json()
+                elif sql['sql'] == 5:
+                    a = eval(data['ext'])
+                    a['groupUserCardId'] = sql_result[1]
+                    a['hostTradeId'] = sql_result[2]
+                    data['ext'] = a
+                    request = requests.post(url, json=data, headers=headers, verify=False).json()
+                    logger.info(
+                        '现在开始进行【团检约前加项groupUserCardId,hostTradeId替换】post,参数格式请求{},请求返回：{}'.format(data, request))
 
+                elif sql['sql'] == 6:
+                    data['userCardId'] = sql_result[1]
+                    data['hostTradeId'] = sql_result[2]
+                    request = requests.post(url, json=data, headers=headers, verify=False).json()
+                    logger.info(
+                        '现在开始进行【团检卡约后加项groupUserCardId,hostTradeId替换】post,参数格式请求{},请求返回：{}'.format(data, request))
+
+                elif sql['sql'] == 7:
+                    data['userCardId'] = sql_result[1]
+                    request = requests.post(url, json=data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【团检卡groupUserCardId替换】post,参数格式请求{},请求返回：{}'.format(data, request))
+
+                elif sql['sql'] == 8:
+                    a = data['ext']
+                    a['groupUserCardId'] = sql_result[1]
+                    if env['lock'] == 0:
+                        reserveDay = lock_time(0)
+                    else:
+                        reserveDay = lock_time(1)
+                    a['examinationReservePo']['reserveTime'] = reserveDay
+                    data['ext'] = a
+                    request = requests.post(url, json=data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【团检卡groupUserCardId,锁定2天预约时间替换】post,参数格式请求{},请求返回：{}'.format(data, request))
+
+                elif sql['sql'] == 9:
+                    data['userCouponId'] = sql_result[1]
+                    request = requests.post(url, json=data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【优惠券userCouponId替换】post,参数格式请求{},请求返回：{}'.format(data, request))
+
+                elif sql['sql'] == 10:
+                    a = eval(data['ext'])
+                    a['groupUserCardId'] = sql_result[1]
+                    data['ext'] = a
+                    data['userCouponId'] = sql_result[2]
+                    request = requests.post(url, json=data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【优惠券userCouponId替换】post,参数格式请求{},请求返回：{}'.format(data, request))
+
+                elif sql['sql'] == 11:
+                    a = eval(data['ext'])
+                    a['reportCode'] = sql_result[1]
+                    data['ext'] = a
+                    data['userCouponId'] = sql_result[2]
+                    request = requests.post(url, json=data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【报告code，优惠券userCouponId替换】post,参数格式请求{},请求返回：{}'.format(data, request))
+
+                elif sql['sql'] == 12:
+                    data['reserveId'] = sql_result[1]
+                    request = requests.post(url, json=data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【reserveId替换】post,参数格式请求{},请求返回：{}'.format(data, request))
+
+                elif sql['sql'] == 13:
+                    data['reserveId'] = sql_result[1]
+                    data['reserveTime'] = lock_time(0)
+                    request = requests.post(url, json=data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【reserveId，reserveTime替换】post,参数格式请求{},请求返回：{}'.format(data, request))
+
+                elif sql['sql'] == 14:
+                    data['analyzeId'] = sql_result[1]
+                    data['reserveDateTimeStamp'] = lock_time(1)
+                    request = requests.post(url, json=data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【reserveId，reserveTime替换】post,参数格式请求{},请求返回：{}'.format(data, request))
+
+                elif sql['sql'] == 15:
+                    data['reserveNumber'] = sql_result[1]
+                    data['uniqReserveCode'] = sql_result[2]
+                    request = requests.post(url, json=data, headers=headers, verify=False).json()
+                    logger.info('现在开始进行【reserveNumber，uniqReserveCode】post,参数格式请求{},请求返回：{}'.format(data, request))
+
+            elif 'cxfa' in env.keys():
+                t_head1 = time_version(cxfa=env['cxfa'])
+                t_head2 = t_head1
+                if 'phone' in env.keys():
+                    t_head2 = time_version(cxfa=env['cxfa'], phone=env['phone'])
+
+                if 'cxfaid' in env.keys() and 'post' in env.keys():
+                    logger.info('现在开始进行时间戳版本长效方案post,参数格式请求')
+                    request1 = requests.post(url, data, headers=t_head1, verify=False).json()
+                    logger.info('第一次保存headers：{},返回：{}'.format(t_head1, request1))
+                    request = requests.post(url, data, headers=t_head2, verify=False).json()
+                    logger.info('第二次保存headers：{},返回：{}'.format(t_head2, request))
+                elif 'cxfa' in env.keys() and 'cxfaid' in env.keys():
+                    logger.info('现在开始进行时间戳版本长效方案post,body格式请求')
+                    request1 = requests.post(url, json=data, headers=t_head1, verify=False).json()
+                    logger.info('第一次保存headers：{},返回：{}'.format(t_head1, request1))
+                    request = requests.post(url, json=data, headers=t_head2, verify=False).json()
+                    logger.info('第二次保存headers：{},返回：{}'.format(t_head2, request))
+                elif 'post' in env.keys() and env['post'] == 1:
+                    logger.info('现在开始进行时间戳版本长效方案post,参数格式请求')
+                    request = requests.post(url, data, headers=t_head1, verify=False).json()
+
+                else:
+                    logger.info('现在开始进行时间戳版本长效方案post,body格式请求')
+                    request = requests.post(url, json=data, headers=t_head1, verify=False).json()
+
+            elif 'post' in env.keys() and env['post'] == 1:
+                logger.info('现在开始进行post,参数格式请求')
+                if 'sms' in env.keys() and env['sms'] == 1:
+                    data["vcode"] = message_code()
+                    # 参数格式
+                    request = requests.post(url, data, headers=headers, verify=False).json()
+                else:
+                    # 参数格式
+                    request = requests.post(url, data, headers=headers, verify=False).json()
+
+
+            elif 'post' in env.keys() and env['post'] == 2:
+                logger.info('现在开始进行post_file请求')
+                path = Allpath.project_path + "/request_file/" + sql['filename']
+                files = {sql['name']: (sql['filename'], open(path, 'rb'))}
+                # body格式
+                request = requests.post(url, data=data, files=files, headers=headers, verify=False).json()
+                logger.info('请求返回：{}'.format(request))
+
+            elif 'post' in env.keys() and env['post'] == 3:
+                logger.info('现在开始进行post参数params格式请求')
+
+                # body格式
+                request = requests.post(url, params=data, headers=headers, verify=False).json()
+                logger.info('请求返回：{}'.format(request))
+
+            else:
+                logger.info('现在开始进行post,body格式请求')
+                # body格式
+                request = requests.post(url, json=data, headers=headers, verify=False).json()
+                logger.info('请求返回：{}'.format(request))
+
+
+        # elif method == 'POST_file':
+        #     logger.info('现在开始进行post_file请求')
+        #     path = Allpath.project_path + "/request_file/" + sql['filename']
+        #     print(sql['name'], headers, path)
+        #     files = {sql['name']: (sql['filename'], open(path, 'rb'))}
+        #     # body格式
+        #     request = requests.post(url, data=data, files=files, headers=headers, verify=False).json()
+        #     logger.info('请求返回：{}'.format(request))
+
+        # elif method == 'POST_word':
+        #     logger.info('现在开始进行post_word请求')
+        #     request = {}
+        #     # 参数格式,返回的是字符串格式
+        #     text = requests.post(url, data, headers, verify=False).text
+        #     request['code'] = text
 
         elif method == 'PUT':
-            # 0:上下线单独处理；1：正常put；2：质检规则关闭处理；3、获取多个字段值json格式；4、获取多个字段值参数格式
             logger.info('现在开始进行put请求')
-            headers["Content-Type"] = "application/json"
-            # 2019年7月23日 16:17:38新增cookie不变循环处理方法
-            if sql['1'] == 0:
-                request1 = requests.put(
-                    'http://47.110.131.231/v1/tenants/_1NTMWLA/staffs/s_819aee8ed8554b9f82e8d6302c8d2411/online',
-                    data='{"status":"online"}', headers=headers).json()
-                # print(request1)
-                if 'test' in request1['data']:
-                    oo["o_authorization"] = request1['data']['test']
-                    # print(oo)
-                # 新增cookie中o_authorization状态保存
-                headers["Cookie"] = 's_authorization=' + oo["s_authorization"] + ';o_authorization=' + oo["o_authorization"]
-                request = requests.put(url, data=json.dumps(data), headers=headers).json()
-                time.sleep(0.3)
-                # 退出
-                get_logout('http://47.110.131.231/v1/tenants/_1NTMWLA/logout', '', headers)
-            elif sql['1'] == 2:
-                sql_result = getMysqlInfo(Allpath.db_conf_path, "config").get_mysql_info(sql['my_sql'],sql['condition'], sql['code'])
-                for i in range(len(sql_result)):
-                    url_d = url + str(sql_result[i]["rule_id"])
-                    request = requests.put(url_d, headers=headers).json()
-                    logger.info("规则ID:%s关闭处理成功!" % sql_result[i]["rule_id"])
-                logger.info(sql['condition'] + "关闭处理成功!")
-            elif sql['1'] == 3:
-                sql_result = getMysqlInfo(Allpath.db_conf_path, "config").get_mysql_info(sql['my_sql'],sql['condition'], sql['code'])
-                logger.info("再分配结果ID获取成功!{}" .format(sql_result))
-                url_d = url.format(sql_result[0],sql_result[3])
-                print(url_d)
-                request = requests.put(url_d, json=data,headers=headers).json()
-            elif sql['1'] == 4:
-                headers.pop('Content-Type')
-                sql_result = getMysqlInfo(Allpath.db_conf_path, "config").get_mysql_info(sql['my_sql'],sql['condition'], sql['code'])
-                logger.info("再分配结果ID获取成功!{}" .format(sql_result))
-                url_d = url.format(sql_result[0],sql_result[3])
-                print(url_d)
-                request = requests.put(url_d,data,headers=headers).json()
+            if 'put' in env.keys() and env['put'] == 1:
+                request = requests.put(url, data=data, headers=headers, verify=False).json()
             else:
+                headers["Content-Type"] = "application/json"
                 # print(data)
                 # .encode("UTF-8")对字符串进行`UTF-8`编码格式编码
                 # 用dumps转义成json格式
@@ -181,72 +315,72 @@ class httpRequest:
                 # json.load()函数的使用，将读取json信息
                 # json.loads()  解码：把Json格式字符串解码转换成Python对象
                 # body格式
-                request = requests.put(url, data=json.dumps(data), headers=headers).json()
-
+                request = requests.put(url, data=json.dumps(data), headers=headers, verify=False).json()
+            logger.info('请求返回：{}'.format(request))
 
 
         elif method == 'DELETE':
             logger.info('现在开始进行delete请求')
+            request = requests.delete(url, data=data, headers=headers, verify=False).json()
             # excel的data中指定：0表示正常请求，1取数据库返回第一个值，2指定数据库返回第二个值，3指定删除规则
-            if '1'in data.keys() and data['1'] == 1:
-                sql_result = getMysqlInfo(Allpath.db_conf_path, "config").get_mysql_info(sql['my_sql'],
-                                                                                         sql['condition'],
-                                                                                         sql['code'])
-                logger.info('数据库返回:' + str(sql_result))
-                logger.info("excel取值获取数据库返回第%s位：" % data['1'])
-                url_del = url + str(sql_result[0])
-                logger.info("请求URL：%s" % url_del)
-                request = requests.delete(url_del, headers=headers).json()
-            elif '1'in data.keys() and data['1'] == 2:
-                sql_result = getMysqlInfo(Allpath.db_conf_path, "config").get_mysql_info(sql['my_sql'],
-                                                                                         sql['condition'],
-                                                                                         sql['code'])
-                logger.info('数据库返回:' + str(sql_result))
-                logger.info("excel取值获取数据库返回第%s位：" % data['1'])
-                url_del = url + str(sql_result[1])
-                logger.info("请求URL：%s" % url_del)
-                request = requests.delete(url_del, headers=headers).json()
-            elif '1'in data.keys() and data['1'] == 3:
-                sql_result = getMysqlInfo(Allpath.db_conf_path, "config").get_mysql_info(sql['my_sql'],
-                                                                                         sql['condition'], sql['code'])
-                for i in range(len(sql_result)):
-                    if 'rule_id' in sql_result[i].keys():
-                        url_d = url + str(sql_result[i]["rule_id"])
-                        request = requests.delete(url_d, headers=header).json()
-                        logger.info("规则ID:%s删除处理成功!" % sql_result[i]["rule_id"])
-                    elif 'id' in sql_result[i].keys():
-                        url_d = url + str(sql_result[i]["id"])
-                        request = requests.delete(url_d, headers=header).json()
-                        logger.info("规则ID:%s删除处理成功!" % sql_result[i]["id"])
-                logger.info(sql['condition'] + "删除处理成功!")
-
-            elif '1'in data.keys() and data['1'] == 0:
-                logger.info("客户进行关闭会话请求！")
-                sql_result = getMysqlInfo(Allpath.db_conf_path, "config").get_mysql_info(sql['my_sql'],
-                                                                                         sql['condition'],
-                                                                                         sql['code'])
-                logger.info('数据库返回:' + str(sql_result))
-                url1 = url.format(sql_result[4], pp["visitor_id"])
-                request = requests.delete(url1, headers=header).json()
-            elif sql['1']==0:
-                request = requests.delete(url,data=data, headers=headers).json()
-            else:
-                request = requests.delete(url, headers=headers).json()
+            # if '1' in data.keys() and data['1'] == 1:
+            #     sql_result = getMysqlInfo(projectenv[1]).get_mysql_info(sql['my_sql'],
+            #                                                                              sql['condition'], sql['code'])
+            #     logger.info('数据库返回:' + str(sql_result))
+            #     logger.info("excel取值获取数据库返回第%s位：" % data['1'])
+            #     url_del = url + str(sql_result[0])
+            #     logger.info("请求URL：%s" % url_del)
+            #     request = requests.delete(url_del, headers=headers, verify=False).json()
+            # elif sql['1'] == 0:
+            #     request = requests.delete(url, data=data, headers=headers, verify=False).json()
+            # else:
+            #     request = requests.delete(url, headers=headers, verify=False).json()
 
         else:
             logger.info('请求方法未知！请核对后在尝试！')
+
         return request
 
 
 if __name__ == '__main__':
-    data = [1,2,3]
-
-
-    url = 'http://47.110.131.231/public/v1/tenant/{tenantId}/pmc/callback/'
-
+    data = {"store_id": 1003494005, "shop_id": 2020061700077000000024295398, "amount": 119.00,
+            "reserve_end_time": "2021-01-21 23:00:00", "reserve_start_time": "2021-01-21 00:00:00",
+            "contact": {"contact_name": "姓名", "cert_no": 110101199003075314, "contact_phone": 13866668888,
+                        "gender": "MAN", "married": "true", "relation": "父母"}, "trade_no": 31243,
+            "tb_item_id": 2300953237937, "ticket_id": 1241431, "request_id": "e98da7d2-580c-47f2-8b2f-689c2d848bf4"}
 
     sql = {}
+    env = {}
 
-    # DELETE,PUT,POST_del,POST_word,POST2,POST1,POST,POST_file,GET,GET_kh
-    hh = httpRequest().httpGet(url, 'PUT', data, sql)
-    print(hh)
+    # url = 'http://b2htest.helianhealth.com/healthmanage-web/app/market/aliordernotify?method=alibaba.alihealth.examination.reserve.confirm&merchantCode=10.81.17&reserveNumber=2020102981&reserveDate=2021-02-18&packageCode=2776&storeId=HL99998'
+    # url = 'https://management-fed-gray.helianhealth.com/h2b2th/healthmanage-admin/admin/trade/marketPkg/syncAliPkgInfoToWeDoctor'
+    url = 'http://10.20.254.188:8393/koubei/taobao/sign?method=qimen.taobao.life.reservation.item.order.reserve&app_key=32678428&sign_method=md5&sign=9F02923BA700FAB95D6AE7894AB113E1&timestamp=2021-05-22 19:16:00&v=2.0'
+    # DELETE,PUT,POST_del,POST_word,POST,POST_file,GET
+    hh = httpRequest().httpGet(url, 'POST', data, sql, env)
+    print("返回", hh)
+
+    #  env:默认0取url_f域名,1取url_h,2取url_a
+    #  sms：默认0不发送短信 1发送，2企业直签短信发送
+    #  post：0正常json格式 1参数格式  2上传文件
+    #  cxfa：长效方案对应时间戳版本信息查询模块
+    #  time：控制单条用例执行后等待时间，用于数据库更新时间差控制，'time':2 表示等待两秒
+    #  random：通过随机生成名称避免重复，value表示生成次数
+    #  new： 通过new字段设置：1控制是否设置新建单位是否走新流程
+    #  {"env": 0, "sms": 0, "post": 0, "cxfa":"获取机构","cxfaid":"不同","phone":"15990106283","get": 1, "sql":1,'time':2}
+    #  def request (self, method, url, params=None, data=None, headers=None, cookies=None, files=None, auth=None,
+    #              timeout=None, allow_redirects=True, proxies=None, hooks=None, stream=None, verify=None, cert=None,
+    #              json=None):
+
+'''
+腾讯报告修改状态
+UPDATE `tencent_order_history` 
+SET medical_time = '2021-01-18',
+order_status = 41 
+WHERE
+  id = 3478
+
+  update trade_sub set service_status=50,sub_status=50 where trade_id='TJTC20210303195354707036';
+  
+  update trade_info set trade_Status=50 where id='TJTC20210303195354707036';
+
+'''

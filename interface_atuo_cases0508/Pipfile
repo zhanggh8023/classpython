@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.douban.com/simple/"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytest-shutil = "*"
+locust = "*"
+requests = "*"
+ddt = "*"
+openpyxl = "*"
+redis = "*"
+importlib-metadata = "2.1.1"
+pymysql = "*"
+numpy = "*"
+pyzmq = "*"
+coverage = "*"
+levenshtein = "*"
+pillow = "*"
+faker = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"

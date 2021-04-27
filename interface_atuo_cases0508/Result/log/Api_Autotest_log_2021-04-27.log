@@ -1,0 +1,330 @@
+2021-04-27 11:25:31,391-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 2 】
+2021-04-27 11:25:31,405-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[27, 28],区间[152, 161]
+2021-04-27 11:25:31,411-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：微医接口逻辑接口
+2021-04-27 11:25:31,502-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet7">
+2021-04-27 11:25:31,516-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:25:31,519-[INFO]-logger.py-Unit_test-日志信息:正在执行第152条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":66,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2890","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:25:31,521-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:25:31,534-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:25:31,537-[INFO]-logger.py-Unit_test-日志信息:正在执行第153条用例:微医创建订单-身份证男已婚-套餐男未婚-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":66,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2890","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:25:31,650-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第152条测试用例返回结果成功：['88260241180', '96F1B73789F0D73CFD80372F849170FD62709304']
+2021-04-27 11:25:31,653-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 152, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":66,"orderNo":"88260241180","sex":"1","reservationTime":"2022-02-16","sign":"96F1B73789F0D73CFD80372F849170FD62709304","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2890","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:25:31,676-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:25:31,720-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:25:31,723-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:25:31,785-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '-1', 'data': None, 'message': 'sign校验不通过'}
+2021-04-27 11:25:31,788-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.131872s
+2021-04-27 11:25:31,790-[INFO]-logger.py-Unit_test-日志信息:接口返回message:sign校验不通过
+2021-04-27 11:25:31,792-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:-1
+2021-04-27 11:25:31,794-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': 'sign校验不通过', 'time': 0.131872, 'code': '-1', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:25:32,128-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:25:32,130-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:25:32,133-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:25:32,136-[INFO]-logger.py-Unit_test-日志信息:正在执行第154条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":66,"orderNo":"%s","sex":"2","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199003072623","packageCode":"2891","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:25:32,139-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:25:32,145-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:25:32,150-[INFO]-logger.py-Unit_test-日志信息:正在执行第155条用例:微医创建订单-身份证女已婚-套餐女未婚-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":66,"orderNo":"%s","sex":"2","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199003072623","packageCode":"2891","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:25:32,299-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第154条测试用例返回结果成功：['22973689405', 'FF0555F4434E33AE8283F3E861D5D0AA77B554B2']
+2021-04-27 11:25:32,302-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 154, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":66,"orderNo":"22973689405","sex":"2","reservationTime":"2022-02-16","sign":"FF0555F4434E33AE8283F3E861D5D0AA77B554B2","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199003072623","packageCode":"2891","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:25:32,305-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:25:32,340-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:25:32,343-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:25:32,376-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '-1', 'data': None, 'message': 'sign校验不通过'}
+2021-04-27 11:25:32,379-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.073958s
+2021-04-27 11:25:32,381-[INFO]-logger.py-Unit_test-日志信息:接口返回message:sign校验不通过
+2021-04-27 11:25:32,383-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:-1
+2021-04-27 11:25:32,386-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': 'sign校验不通过', 'time': 0.073958, 'code': '-1', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:25:32,706-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:25:32,709-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:25:32,712-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:25:32,715-[INFO]-logger.py-Unit_test-日志信息:正在执行第156条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":6666,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199007166635","packageCode":"2892","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:25:32,717-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:25:32,726-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:25:32,729-[INFO]-logger.py-Unit_test-日志信息:正在执行第157条用例:微医创建订单-身份证男未婚-套餐男已婚-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":6666,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199007166635","packageCode":"2892","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:25:32,877-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第156条测试用例返回结果成功：['51643381845', 'E61D2D277D039D460D5FDDDF7726FA25582672EC']
+2021-04-27 11:25:32,880-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 156, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":6666,"orderNo":"51643381845","sex":"1","reservationTime":"2022-02-16","sign":"E61D2D277D039D460D5FDDDF7726FA25582672EC","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199007166635","packageCode":"2892","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:25:32,884-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:25:32,913-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:25:32,916-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:25:32,949-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '-1', 'data': None, 'message': 'sign校验不通过'}
+2021-04-27 11:25:32,951-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.06917s
+2021-04-27 11:25:32,954-[INFO]-logger.py-Unit_test-日志信息:接口返回message:sign校验不通过
+2021-04-27 11:25:32,956-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:-1
+2021-04-27 11:25:32,959-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': 'sign校验不通过', 'time': 0.06917, 'code': '-1', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:25:33,263-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:25:33,265-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:25:33,268-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:25:33,270-[INFO]-logger.py-Unit_test-日志信息:正在执行第158条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":6666,"orderNo":"%s","sex":"2","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199003072623","packageCode":"2893","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:25:33,274-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:25:33,281-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:25:33,284-[INFO]-logger.py-Unit_test-日志信息:正在执行第159条用例:微医创建订单-身份证女未婚-套餐女已婚-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":6666,"orderNo":"%s","sex":"2","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199003072623","packageCode":"2893","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:25:33,428-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第158条测试用例返回结果成功：['75280354448', 'F6741259F720E80B851C66A4E0D550B067024524']
+2021-04-27 11:25:33,431-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 158, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":6666,"orderNo":"75280354448","sex":"2","reservationTime":"2022-02-16","sign":"F6741259F720E80B851C66A4E0D550B067024524","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199003072623","packageCode":"2893","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:25:33,434-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:25:33,464-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:25:33,467-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:25:33,489-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '-1', 'data': None, 'message': 'sign校验不通过'}
+2021-04-27 11:25:33,491-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.057894s
+2021-04-27 11:25:33,494-[INFO]-logger.py-Unit_test-日志信息:接口返回message:sign校验不通过
+2021-04-27 11:25:33,496-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:-1
+2021-04-27 11:25:33,498-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': 'sign校验不通过', 'time': 0.057894, 'code': '-1', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:25:33,845-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:25:33,847-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:25:33,852-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:25:33,855-[INFO]-logger.py-Unit_test-日志信息:正在执行第160条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":66,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2894","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:25:33,857-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:25:33,865-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:25:33,867-[INFO]-logger.py-Unit_test-日志信息:正在执行第161条用例:微医创建订单-身份证男已婚-套餐下架-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":66,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2894","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:25:34,025-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第152条测试用例返回结果成功：['88260241180', '96F1B73789F0D73CFD80372F849170FD62709304']
+2021-04-27 11:25:34,028-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 152, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":66,"orderNo":"88260241180","sex":"1","reservationTime":"2022-02-16","sign":"96F1B73789F0D73CFD80372F849170FD62709304","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2894","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:25:34,033-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:25:34,076-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:25:34,079-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:25:34,112-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '-1', 'data': None, 'message': 'sign校验不通过'}
+2021-04-27 11:25:34,115-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.082952s
+2021-04-27 11:25:34,119-[INFO]-logger.py-Unit_test-日志信息:接口返回message:sign校验不通过
+2021-04-27 11:25:34,122-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:-1
+2021-04-27 11:25:34,124-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': 'sign校验不通过', 'time': 0.082952, 'code': '-1', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:25:34,423-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:25:34,425-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:31:14,511-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 2 】
+2021-04-27 11:31:14,522-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[27, 28],区间[152, 161]
+2021-04-27 11:31:14,529-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：微医接口逻辑接口
+2021-04-27 11:31:14,666-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet7">
+2021-04-27 11:31:14,680-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:31:14,682-[INFO]-logger.py-Unit_test-日志信息:正在执行第152条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":66,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2890","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:31:14,685-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:31:14,698-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:31:14,700-[INFO]-logger.py-Unit_test-日志信息:正在执行第153条用例:微医创建订单-身份证男已婚-套餐男未婚-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":66,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2890","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:31:14,873-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第152条测试用例返回结果成功：['88260241180', '96F1B73789F0D73CFD80372F849170FD62709304']
+2021-04-27 11:31:14,876-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 152, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":66,"orderNo":"88260241180","sex":"1","reservationTime":"2022-02-16","sign":"96F1B73789F0D73CFD80372F849170FD62709304","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2890","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:31:14,885-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:31:14,907-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:31:14,909-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:31:14,969-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '-1', 'data': None, 'message': 'sign校验不通过'}
+2021-04-27 11:31:14,971-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.091945s
+2021-04-27 11:31:14,973-[INFO]-logger.py-Unit_test-日志信息:接口返回message:sign校验不通过
+2021-04-27 11:31:14,976-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:-1
+2021-04-27 11:31:14,978-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': 'sign校验不通过', 'time': 0.091945, 'code': '-1', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:31:15,332-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:31:15,334-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:31:15,337-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:31:15,340-[INFO]-logger.py-Unit_test-日志信息:正在执行第154条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":66,"orderNo":"%s","sex":"2","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199003072623","packageCode":"2891","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:31:15,343-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:31:15,350-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:31:15,352-[INFO]-logger.py-Unit_test-日志信息:正在执行第155条用例:微医创建订单-身份证女已婚-套餐女未婚-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":66,"orderNo":"%s","sex":"2","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199003072623","packageCode":"2891","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:31:15,510-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第154条测试用例返回结果成功：['22973689405', 'FF0555F4434E33AE8283F3E861D5D0AA77B554B2']
+2021-04-27 11:31:15,513-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 154, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":66,"orderNo":"22973689405","sex":"2","reservationTime":"2022-02-16","sign":"FF0555F4434E33AE8283F3E861D5D0AA77B554B2","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199003072623","packageCode":"2891","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:31:15,516-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:31:15,557-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:31:15,560-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:31:15,587-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '-1', 'data': None, 'message': 'sign校验不通过'}
+2021-04-27 11:31:15,589-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.072937s
+2021-04-27 11:31:15,592-[INFO]-logger.py-Unit_test-日志信息:接口返回message:sign校验不通过
+2021-04-27 11:31:15,595-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:-1
+2021-04-27 11:31:15,598-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': 'sign校验不通过', 'time': 0.072937, 'code': '-1', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:31:15,939-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:31:15,942-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:31:15,945-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:31:15,948-[INFO]-logger.py-Unit_test-日志信息:正在执行第156条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":6666,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199007166635","packageCode":"2892","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:31:15,950-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:31:15,959-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:31:15,962-[INFO]-logger.py-Unit_test-日志信息:正在执行第157条用例:微医创建订单-身份证男未婚-套餐男已婚-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":6666,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199007166635","packageCode":"2892","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:31:16,136-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第156条测试用例返回结果成功：['51643381845', 'E61D2D277D039D460D5FDDDF7726FA25582672EC']
+2021-04-27 11:31:16,139-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 156, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":6666,"orderNo":"51643381845","sex":"1","reservationTime":"2022-02-16","sign":"E61D2D277D039D460D5FDDDF7726FA25582672EC","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199007166635","packageCode":"2892","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:31:16,143-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:31:16,163-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:31:16,166-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:31:16,202-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '-1', 'data': None, 'message': 'sign校验不通过'}
+2021-04-27 11:31:16,203-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.061964s
+2021-04-27 11:31:16,206-[INFO]-logger.py-Unit_test-日志信息:接口返回message:sign校验不通过
+2021-04-27 11:31:16,208-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:-1
+2021-04-27 11:31:16,211-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': 'sign校验不通过', 'time': 0.061964, 'code': '-1', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:31:16,556-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:31:16,558-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:31:16,561-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:31:16,564-[INFO]-logger.py-Unit_test-日志信息:正在执行第158条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":6666,"orderNo":"%s","sex":"2","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199003072623","packageCode":"2893","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:31:16,569-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:31:16,576-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:31:16,578-[INFO]-logger.py-Unit_test-日志信息:正在执行第159条用例:微医创建订单-身份证女未婚-套餐女已婚-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":6666,"orderNo":"%s","sex":"2","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199003072623","packageCode":"2893","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:31:16,763-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第158条测试用例返回结果成功：['75280354448', 'F6741259F720E80B851C66A4E0D550B067024524']
+2021-04-27 11:31:16,765-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 158, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":6666,"orderNo":"75280354448","sex":"2","reservationTime":"2022-02-16","sign":"F6741259F720E80B851C66A4E0D550B067024524","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199003072623","packageCode":"2893","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:31:16,769-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:31:16,799-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:31:16,802-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:31:16,824-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '-1', 'data': None, 'message': 'sign校验不通过'}
+2021-04-27 11:31:16,826-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.056966s
+2021-04-27 11:31:16,829-[INFO]-logger.py-Unit_test-日志信息:接口返回message:sign校验不通过
+2021-04-27 11:31:16,832-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:-1
+2021-04-27 11:31:16,834-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': 'sign校验不通过', 'time': 0.056966, 'code': '-1', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:31:17,307-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:31:17,309-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:31:17,312-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:31:17,314-[INFO]-logger.py-Unit_test-日志信息:正在执行第160条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":66,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2894","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:31:17,316-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:31:17,325-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:31:17,328-[INFO]-logger.py-Unit_test-日志信息:正在执行第161条用例:微医创建订单-身份证男已婚-套餐下架-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":66,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2894","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:31:17,492-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第152条测试用例返回结果成功：['88260241180', '96F1B73789F0D73CFD80372F849170FD62709304']
+2021-04-27 11:31:17,495-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 152, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":66,"orderNo":"88260241180","sex":"1","reservationTime":"2022-02-16","sign":"96F1B73789F0D73CFD80372F849170FD62709304","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2894","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:31:17,499-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:31:17,519-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:31:17,522-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:31:17,553-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '-1', 'data': None, 'message': 'sign校验不通过'}
+2021-04-27 11:31:17,555-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.056966s
+2021-04-27 11:31:17,558-[INFO]-logger.py-Unit_test-日志信息:接口返回message:sign校验不通过
+2021-04-27 11:31:17,560-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:-1
+2021-04-27 11:31:17,563-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': 'sign校验不通过', 'time': 0.056966, 'code': '-1', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:31:17,906-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:31:17,909-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:33:25,677-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 2 】
+2021-04-27 11:33:25,688-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[27, 28],区间[152, 161]
+2021-04-27 11:33:25,696-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：微医接口逻辑接口
+2021-04-27 11:33:25,792-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet7">
+2021-04-27 11:33:25,806-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:33:25,808-[INFO]-logger.py-Unit_test-日志信息:正在执行第152条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":66,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2890","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:33:25,810-[INFO]-logger.py-all_method-日志信息:调用随机数获取替换字段返回值成功：{"amount":66,"orderNo":"54464816466","sex":"1","reservationTime":"2022-02-16","sign":"","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2890","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:33:25,822-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:33:25,854-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:33:25,857-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:33:25,928-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'data': '8B85A2CCA5BCE98FE437C54F35921BBEEC68E73C', 'message': '成功'}
+2021-04-27 11:33:25,930-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.11741s
+2021-04-27 11:33:25,932-[INFO]-logger.py-Unit_test-日志信息:接口返回message:['54464816466', '8B85A2CCA5BCE98FE437C54F35921BBEEC68E73C']
+2021-04-27 11:33:25,934-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-04-27 11:33:25,936-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': ['54464816466', '8B85A2CCA5BCE98FE437C54F35921BBEEC68E73C'], 'time': 0.11741, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:33:26,207-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:33:26,209-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:33:26,212-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:33:26,215-[INFO]-logger.py-Unit_test-日志信息:正在执行第153条用例:微医创建订单-身份证男已婚-套餐男未婚-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":66,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2890","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:33:26,406-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第152条测试用例返回结果成功：['54464816466', '8B85A2CCA5BCE98FE437C54F35921BBEEC68E73C']
+2021-04-27 11:33:26,409-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 152, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":66,"orderNo":"54464816466","sex":"1","reservationTime":"2022-02-16","sign":"8B85A2CCA5BCE98FE437C54F35921BBEEC68E73C","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2890","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:33:26,412-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:33:26,456-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:33:26,459-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:33:26,522-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'data': {'bizOrderNo': '608'}, 'message': '成功'}
+2021-04-27 11:33:26,524-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.112936s
+2021-04-27 11:33:26,526-[INFO]-logger.py-Unit_test-日志信息:接口返回message:{'bizOrderNo': '608'}
+2021-04-27 11:33:26,532-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：0
+2021-04-27 11:33:26,855-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:33:26,857-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:33:26,869-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:33:26,871-[INFO]-logger.py-Unit_test-日志信息:正在执行第154条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":66,"orderNo":"%s","sex":"2","reservationTime":"2022-02-16","sign":"","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199003072623","packageCode":"2891","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:33:26,873-[INFO]-logger.py-all_method-日志信息:调用随机数获取替换字段返回值成功：{"amount":66,"orderNo":"45992437719","sex":"2","reservationTime":"2022-02-16","sign":"","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199003072623","packageCode":"2891","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:33:26,876-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:33:26,900-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:33:26,903-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:33:26,933-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'data': 'BB2FF64924984623DFF7A17659EE992931C96386', 'message': '成功'}
+2021-04-27 11:33:26,936-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.059964s
+2021-04-27 11:33:26,938-[INFO]-logger.py-Unit_test-日志信息:接口返回message:['45992437719', 'BB2FF64924984623DFF7A17659EE992931C96386']
+2021-04-27 11:33:26,941-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-04-27 11:33:26,943-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': ['45992437719', 'BB2FF64924984623DFF7A17659EE992931C96386'], 'time': 0.059964, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:33:27,266-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:33:27,270-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:33:27,274-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:33:27,277-[INFO]-logger.py-Unit_test-日志信息:正在执行第155条用例:微医创建订单-身份证女已婚-套餐女未婚-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":66,"orderNo":"%s","sex":"2","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199003072623","packageCode":"2891","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:33:27,449-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第154条测试用例返回结果成功：['45992437719', 'BB2FF64924984623DFF7A17659EE992931C96386']
+2021-04-27 11:33:27,452-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 154, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":66,"orderNo":"45992437719","sex":"2","reservationTime":"2022-02-16","sign":"BB2FF64924984623DFF7A17659EE992931C96386","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199003072623","packageCode":"2891","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:33:27,455-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:33:27,496-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:33:27,498-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:33:27,543-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '-1', 'data': None, 'message': '婚姻状态与套餐不符'}
+2021-04-27 11:33:27,546-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.090948s
+2021-04-27 11:33:27,548-[INFO]-logger.py-Unit_test-日志信息:接口返回message:婚姻状态与套餐不符
+2021-04-27 11:33:27,551-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:-1
+2021-04-27 11:33:27,555-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': '婚姻状态与套餐不符', 'time': 0.090948, 'code': '-1', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:33:27,927-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:33:27,929-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:33:27,932-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:33:27,934-[INFO]-logger.py-Unit_test-日志信息:正在执行第156条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":6666,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199007166635","packageCode":"2892","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:33:27,936-[INFO]-logger.py-all_method-日志信息:调用随机数获取替换字段返回值成功：{"amount":6666,"orderNo":"36838249925","sex":"1","reservationTime":"2022-02-16","sign":"","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199007166635","packageCode":"2892","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:33:27,940-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:33:27,971-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:33:27,973-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:33:27,999-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'data': '1226AB17CD391E90504F277D8B0E913CA208ECDA', 'message': '成功'}
+2021-04-27 11:33:28,002-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.061775s
+2021-04-27 11:33:28,006-[INFO]-logger.py-Unit_test-日志信息:接口返回message:['36838249925', '1226AB17CD391E90504F277D8B0E913CA208ECDA']
+2021-04-27 11:33:28,009-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-04-27 11:33:28,013-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': ['36838249925', '1226AB17CD391E90504F277D8B0E913CA208ECDA'], 'time': 0.061775, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:33:28,358-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:33:28,360-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:33:28,363-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:33:28,366-[INFO]-logger.py-Unit_test-日志信息:正在执行第157条用例:微医创建订单-身份证男未婚-套餐男已婚-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":6666,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199007166635","packageCode":"2892","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:33:28,513-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第156条测试用例返回结果成功：['36838249925', '1226AB17CD391E90504F277D8B0E913CA208ECDA']
+2021-04-27 11:33:28,516-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 156, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":6666,"orderNo":"36838249925","sex":"1","reservationTime":"2022-02-16","sign":"1226AB17CD391E90504F277D8B0E913CA208ECDA","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199007166635","packageCode":"2892","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:33:28,520-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:33:28,563-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:33:28,566-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:33:28,617-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'data': {'bizOrderNo': '609'}, 'message': '成功'}
+2021-04-27 11:33:28,620-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.100926s
+2021-04-27 11:33:28,622-[INFO]-logger.py-Unit_test-日志信息:接口返回message:{'bizOrderNo': '609'}
+2021-04-27 11:33:28,624-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：0
+2021-04-27 11:33:29,097-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:33:29,103-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:33:29,110-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:33:29,114-[INFO]-logger.py-Unit_test-日志信息:正在执行第158条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":6666,"orderNo":"%s","sex":"2","reservationTime":"2022-02-16","sign":"","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199003072623","packageCode":"2893","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:33:29,116-[INFO]-logger.py-all_method-日志信息:调用随机数获取替换字段返回值成功：{"amount":6666,"orderNo":"66434400950","sex":"2","reservationTime":"2022-02-16","sign":"","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199003072623","packageCode":"2893","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:33:29,119-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:33:29,162-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:33:29,165-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:33:29,195-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'data': '50864F71C78DD6CC5F2B3A517CDEED59D347EF49', 'message': '成功'}
+2021-04-27 11:33:29,199-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.078955s
+2021-04-27 11:33:29,203-[INFO]-logger.py-Unit_test-日志信息:接口返回message:['66434400950', '50864F71C78DD6CC5F2B3A517CDEED59D347EF49']
+2021-04-27 11:33:29,208-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-04-27 11:33:29,211-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': ['66434400950', '50864F71C78DD6CC5F2B3A517CDEED59D347EF49'], 'time': 0.078955, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:33:29,607-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:33:29,613-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:33:29,616-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:33:29,619-[INFO]-logger.py-Unit_test-日志信息:正在执行第159条用例:微医创建订单-身份证女未婚-套餐女已婚-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":6666,"orderNo":"%s","sex":"2","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199003072623","packageCode":"2893","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:33:30,021-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第158条测试用例返回结果成功：['66434400950', '50864F71C78DD6CC5F2B3A517CDEED59D347EF49']
+2021-04-27 11:33:30,024-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 158, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":6666,"orderNo":"66434400950","sex":"2","reservationTime":"2022-02-16","sign":"50864F71C78DD6CC5F2B3A517CDEED59D347EF49","hospitalCode":"HL99997","totalAmount":6666,"identityType":"1","identity":"110101199003072623","packageCode":"2893","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":0,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:33:30,033-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:33:30,077-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:33:30,081-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:33:30,121-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '-1', 'data': None, 'message': '婚姻状态与套餐不符'}
+2021-04-27 11:33:30,125-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.096944s
+2021-04-27 11:33:30,128-[INFO]-logger.py-Unit_test-日志信息:接口返回message:婚姻状态与套餐不符
+2021-04-27 11:33:30,131-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:-1
+2021-04-27 11:33:30,135-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': '婚姻状态与套餐不符', 'time': 0.096944, 'code': '-1', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:33:30,951-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:33:30,957-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:33:30,960-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:33:30,962-[INFO]-logger.py-Unit_test-日志信息:正在执行第160条用例:微医生成签名-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/sign；method：POST；data：{"amount":66,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2894","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:33:30,964-[INFO]-logger.py-all_method-日志信息:调用随机数获取替换字段返回值成功：{"amount":66,"orderNo":"53755435542","sex":"1","reservationTime":"2022-02-16","sign":"","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2894","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:33:30,973-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:33:31,014-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:33:31,019-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:33:31,053-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'data': '249F80677D006C3689AAB600894511DCEE2C3972', 'message': '成功'}
+2021-04-27 11:33:31,056-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.084951s
+2021-04-27 11:33:31,058-[INFO]-logger.py-Unit_test-日志信息:接口返回message:['53755435542', '249F80677D006C3689AAB600894511DCEE2C3972']
+2021-04-27 11:33:31,061-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-04-27 11:33:31,064-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': ['53755435542', '249F80677D006C3689AAB600894511DCEE2C3972'], 'time': 0.084951, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:33:31,542-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:33:31,545-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-27 11:33:31,547-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-27 11:33:31,553-[INFO]-logger.py-Unit_test-日志信息:正在执行第161条用例:微医创建订单-身份证男已婚-套餐下架-失败——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wedoctor/order/createOrder；method：POST；data：{"amount":66,"orderNo":"%s","sex":"1","reservationTime":"2022-02-16","sign":"%s","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2894","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}；sql：{}
+2021-04-27 11:33:31,735-[INFO]-logger.py-all_method-日志信息:获取Sheet7表单第152条测试用例返回结果成功：['54464816466', '8B85A2CCA5BCE98FE437C54F35921BBEEC68E73C']
+2021-04-27 11:33:31,738-[INFO]-logger.py-all_method-日志信息:调用id和返回字段{'id': 152, 'random': 'result[0]', 'sign': 'result[1]'}
+获取指定返回值成功：{"amount":66,"orderNo":"54464816466","sex":"1","reservationTime":"2022-02-16","sign":"8B85A2CCA5BCE98FE437C54F35921BBEEC68E73C","hospitalCode":"HL99997","totalAmount":66,"identityType":"1","identity":"110101199007166635","packageCode":"2894","name":"zgh","appKey":"wy5E5Qw0B72sd656","maritalStatus":1,"timestamp":1615860010000, "mobileNo": 15258814180}
+2021-04-27 11:33:31,743-[INFO]-logger.py-all_method-日志信息:今天时间戳：2021-04-27,1619528400000
+2021-04-27 11:33:31,768-[INFO]-logger.py-all_method-日志信息:header获取返回:{'uid': '17200000090', 'token': '70fde9a9a2a19cf0718a690ba099c12c121', 'god-portal-signature': 'c517aefa3e2ddcba789a60d47609369b540fd0d9502d1e212f6c6ea498b874b7', 'god-portal-timestamp': '1608261499685', 'god-portal-request-id': '6f02e800-3ebb-11eb-b067-e9a8515afd05'}
+2021-04-27 11:33:31,771-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-27 11:33:31,795-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '-1', 'data': None, 'message': 'sign校验不通过'}
+2021-04-27 11:33:31,799-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.056965s
+2021-04-27 11:33:31,802-[INFO]-logger.py-Unit_test-日志信息:接口返回message:sign校验不通过
+2021-04-27 11:33:31,805-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:-1
+2021-04-27 11:33:31,808-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': 'sign校验不通过', 'time': 0.056965, 'code': '-1', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-27 11:33:32,147-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-27 11:33:32,149-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================

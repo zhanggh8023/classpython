@@ -1,0 +1,425 @@
+2021-04-22 09:48:57,352-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 09:48:57,359-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 09:48:57,415-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 09:48:57,757-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 09:48:57,783-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 09:48:57,785-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 09:50:00,550-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 09:50:00,556-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 09:50:00,559-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 09:50:00,810-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 09:50:00,817-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 09:50:00,818-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 09:51:00,865-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 09:52:00,933-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 09:52:00,939-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 09:52:00,942-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 09:52:01,159-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 09:52:01,167-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 09:52:01,169-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 09:53:01,219-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 09:53:24,564-[INFO]-logger.py-readExcel-日志信息:当前环境===｛｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 09:53:57,523-[INFO]-logger.py-readExcel-日志信息:当前环境===｛｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 09:54:12,294-[INFO]-logger.py-readExcel-日志信息:当前环境===｛｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 09:54:38,229-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 09:54:38,235-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 09:54:38,239-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 09:54:38,454-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 09:54:38,463-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 09:54:38,465-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 09:55:38,508-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 10:00:29,302-[INFO]-logger.py-version_msg-日志信息:钉钉机器人消息请求内容{'msgtype': 'markdown', 'markdown': {'title': '今日测试环境占用情况', 'text': '### 今日测试环境占用情况：\n\n**【H2B2】冒烟测试**==》 \n\n1、版本：[refactor1.0-company2.0]，时间：[04.19]；\n\n2、版本：[tf-yhtx-0422]，时间：[04.20]；\n\n\n**【H2B】功能测试**==》 \n\n1、版本：[refactor1.0-company2.0]，时间：[04.19]；\n\n\n**【B2H】功能测试**==》 \n\n1、版本：[tf-yhtx-0422]，时间：[04.20]；\n\n\n**【H2B3】回归测试**==》 \n\n1、版本：[]，时间：[]；\n\n> ![screenshot]()\n> ###### 2021-04-22 发布 [详情]() \n'}, 'at': {'atMobiles': ['17681829051'], 'atUserIds ': ['章广华'], 'isAtAll': 'true'}},钉钉机器人消息请求成功{'errcode': 0, 'errmsg': 'ok'}
+2021-04-22 10:13:20,710-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 10:13:20,716-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 10:13:20,719-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 10:13:20,966-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 10:13:20,973-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 10:13:20,974-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 10:13:21,039-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'b5b55ce8210411505e6570cd104a97b6', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'b5b55ce8210411505e6570cd104a97b6', 'uid': '17200000090'}
+2021-04-22 10:13:21,040-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 10:13:21,084-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20150', 'errorMsg': '用户不存在', 'result': None, 'success': False}
+2021-04-22 10:13:21,086-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.110132s
+2021-04-22 10:13:21,089-[INFO]-logger.py-Unit_test-日志信息:接口返回message:用户不存在
+2021-04-22 10:13:21,095-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20150
+2021-04-22 10:13:21,715-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 10:13:21,716-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 10:45:46,019-[INFO]-logger.py-readExcel-日志信息:当前环境===｛B2HHTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 10:45:46,031-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 10:45:46,038-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 10:45:46,475-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 10:45:46,489-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 10:45:46,491-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 10:45:46,901-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '8705c93439e90db70a1c2cc50b141928', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '8705c93439e90db70a1c2cc50b141928', 'uid': '17200000090'}
+2021-04-22 10:45:46,906-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 10:45:46,958-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20150', 'errorMsg': '用户不存在', 'result': None, 'success': False}
+2021-04-22 10:45:46,960-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.466269s
+2021-04-22 10:45:46,962-[INFO]-logger.py-Unit_test-日志信息:接口返回message:用户不存在
+2021-04-22 10:45:46,968-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20150
+2021-04-22 10:45:47,964-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 10:45:47,966-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 10:49:16,242-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 10:49:16,254-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 10:49:16,260-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 10:49:16,690-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 10:49:16,704-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 10:49:16,706-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 10:49:16,820-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'b5b55ce8210411505e6570cd104a97b6', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'b5b55ce8210411505e6570cd104a97b6', 'uid': '17200000090'}
+2021-04-22 10:49:16,823-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 10:49:16,848-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20150', 'errorMsg': '用户不存在', 'result': None, 'success': False}
+2021-04-22 10:49:16,851-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.142264s
+2021-04-22 10:49:16,853-[INFO]-logger.py-Unit_test-日志信息:接口返回message:用户不存在
+2021-04-22 10:49:16,859-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20150
+2021-04-22 10:49:17,879-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 10:49:17,882-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 10:56:45,297-[INFO]-logger.py-readExcel-日志信息:当前环境===｛B2HHTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 10:56:45,308-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 10:56:45,315-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 10:56:45,762-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 10:56:45,777-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 10:56:45,780-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/env-b2h/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 10:56:45,886-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '8705c93439e90db70a1c2cc50b141928', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '8705c93439e90db70a1c2cc50b141928', 'uid': '17200000090'}
+2021-04-22 10:56:45,889-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 10:56:45,919-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20150', 'errorMsg': '用户不存在', 'result': None, 'success': False}
+2021-04-22 10:56:45,920-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.138089s
+2021-04-22 10:56:45,923-[INFO]-logger.py-Unit_test-日志信息:接口返回message:用户不存在
+2021-04-22 10:56:45,928-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20150
+2021-04-22 10:56:46,968-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 10:56:46,971-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:00:03,017-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:00:03,028-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:00:03,035-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:00:03,440-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:00:03,452-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:00:03,455-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:00:03,532-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'b5b55ce8210411505e6570cd104a97b6', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'b5b55ce8210411505e6570cd104a97b6', 'uid': '17200000090'}
+2021-04-22 11:00:03,536-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 11:00:03,575-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20150', 'errorMsg': '用户不存在', 'result': None, 'success': False}
+2021-04-22 11:00:03,577-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.118333s
+2021-04-22 11:00:03,579-[INFO]-logger.py-Unit_test-日志信息:接口返回message:用户不存在
+2021-04-22 11:00:03,584-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20150
+2021-04-22 11:00:04,584-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 11:00:04,586-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:01:12,231-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2BHTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:01:12,243-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:01:12,251-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:01:12,679-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:01:12,692-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:01:12,694-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/envk8s/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:01:13,101-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '85771f5f46c912a006d46b105c0b1827', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '85771f5f46c912a006d46b105c0b1827', 'uid': '17200000090'}
+2021-04-22 11:01:13,104-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 11:01:13,439-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-04-22 11:01:13,441-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.74394s
+2021-04-22 11:01:13,443-[INFO]-logger.py-Unit_test-日志信息:接口返回message:None
+2021-04-22 11:01:13,445-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-04-22 11:01:13,447-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': None, 'time': 0.74394, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-22 11:01:14,480-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 11:01:14,482-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:03:56,879-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:03:56,890-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:03:56,896-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:03:57,305-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:03:57,319-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:03:57,321-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:03:57,408-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'b5b55ce8210411505e6570cd104a97b6', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'b5b55ce8210411505e6570cd104a97b6', 'uid': '17200000090'}
+2021-04-22 11:03:57,411-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 11:03:57,442-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20150', 'errorMsg': '用户不存在', 'result': None, 'success': False}
+2021-04-22 11:03:57,445-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.120983s
+2021-04-22 11:03:57,448-[INFO]-logger.py-Unit_test-日志信息:接口返回message:用户不存在
+2021-04-22 11:03:57,454-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20150
+2021-04-22 11:03:58,519-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 11:03:58,522-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:05:32,046-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:05:32,057-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:05:32,065-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:05:32,520-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:05:32,534-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:05:32,536-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:05:32,631-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'b5b55ce8210411505e6570cd104a97b6', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'b5b55ce8210411505e6570cd104a97b6', 'uid': '17200000090'}
+2021-04-22 11:05:32,633-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 11:05:32,658-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20150', 'errorMsg': '用户不存在', 'result': None, 'success': False}
+2021-04-22 11:05:32,660-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.121969s
+2021-04-22 11:05:32,662-[INFO]-logger.py-Unit_test-日志信息:接口返回message:用户不存在
+2021-04-22 11:05:32,667-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20150
+2021-04-22 11:05:33,661-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 11:05:33,663-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:06:19,115-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2BHTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:06:19,127-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:06:19,135-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:06:19,605-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:06:19,619-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:06:19,621-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/envk8s/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:06:20,000-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:06:35,868-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2BHTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:06:35,879-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:06:35,888-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:06:36,307-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:06:36,321-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:06:36,324-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/envk8s/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:06:36,639-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:07:52,575-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:07:52,585-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:07:52,591-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:07:53,010-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:07:53,023-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:07:53,025-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:07:53,091-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'b5b55ce8210411505e6570cd104a97b6', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'b5b55ce8210411505e6570cd104a97b6', 'uid': '17200000090'}
+2021-04-22 11:07:53,094-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 11:07:53,117-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20150', 'errorMsg': '用户不存在', 'result': None, 'success': False}
+2021-04-22 11:07:53,119-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.092063s
+2021-04-22 11:07:53,122-[INFO]-logger.py-Unit_test-日志信息:接口返回message:用户不存在
+2021-04-22 11:07:53,128-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20150
+2021-04-22 11:07:54,125-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 11:07:54,128-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:08:08,906-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2BHTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:08:08,917-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:08:08,925-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:08:09,409-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:08:09,422-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:08:09,426-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/envk8s/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:08:09,730-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:11:21,013-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2BHTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:11:21,024-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:11:21,032-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:11:21,445-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:11:21,458-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:11:21,460-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/envk8s/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:11:21,895-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '85771f5f46c912a006d46b105c0b1827', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '85771f5f46c912a006d46b105c0b1827', 'uid': '17200000090'}
+2021-04-22 11:11:21,899-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 11:11:22,266-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-04-22 11:11:22,268-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.805078s
+2021-04-22 11:11:22,270-[INFO]-logger.py-Unit_test-日志信息:接口返回message:None
+2021-04-22 11:11:22,272-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-04-22 11:11:22,274-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': None, 'time': 0.805078, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-22 11:11:23,273-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 11:11:23,275-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:11:59,537-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2BHTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:11:59,552-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:11:59,558-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:12:00,019-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:12:00,033-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:12:00,036-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/envk8s/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:12:00,370-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:12:49,269-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2BHTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:12:49,280-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:12:49,287-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:12:49,698-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:12:49,712-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:12:49,714-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/envk8s/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:12:50,023-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:14:21,117-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2BHTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:14:21,128-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:14:21,134-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:14:21,620-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:14:21,634-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:14:21,637-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/envk8s/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:14:22,834-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '85771f5f46c912a006d46b105c0b1827', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '85771f5f46c912a006d46b105c0b1827', 'uid': '17200000090'}
+2021-04-22 11:14:22,836-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 11:14:23,228-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-04-22 11:14:23,231-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 1.591083s
+2021-04-22 11:14:23,233-[INFO]-logger.py-Unit_test-日志信息:接口返回message:None
+2021-04-22 11:14:23,236-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-04-22 11:14:23,238-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': None, 'time': 1.591083, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-22 11:14:24,383-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 11:14:24,386-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:14:46,715-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2BHTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:14:46,725-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:14:46,732-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:14:47,153-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:14:47,165-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:14:47,168-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/envk8s/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:14:47,552-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '85771f5f46c912a006d46b105c0b1827', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '85771f5f46c912a006d46b105c0b1827', 'uid': '17200000090'}
+2021-04-22 11:14:47,554-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 11:14:47,901-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-04-22 11:14:47,903-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.733488s
+2021-04-22 11:14:47,906-[INFO]-logger.py-Unit_test-日志信息:接口返回message:None
+2021-04-22 11:14:47,908-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-04-22 11:14:47,909-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': None, 'time': 0.733488, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-22 11:14:48,861-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 11:14:48,863-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:15:18,285-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:15:18,295-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:15:18,302-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:15:18,728-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:15:18,742-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:15:18,745-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:15:18,805-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'b5b55ce8210411505e6570cd104a97b6', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'b5b55ce8210411505e6570cd104a97b6', 'uid': '17200000090'}
+2021-04-22 11:15:18,807-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 11:15:18,838-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20150', 'errorMsg': '用户不存在', 'result': None, 'success': False}
+2021-04-22 11:15:18,840-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.092942s
+2021-04-22 11:15:18,842-[INFO]-logger.py-Unit_test-日志信息:接口返回message:用户不存在
+2021-04-22 11:15:18,848-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20150
+2021-04-22 11:15:19,860-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 11:15:19,862-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:15:46,118-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:15:46,129-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:15:46,135-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:15:46,563-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:15:46,578-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:15:46,580-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:15:46,650-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'b5b55ce8210411505e6570cd104a97b6', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'b5b55ce8210411505e6570cd104a97b6', 'uid': '17200000090'}
+2021-04-22 11:15:46,653-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 11:15:46,680-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20150', 'errorMsg': '用户不存在', 'result': None, 'success': False}
+2021-04-22 11:15:46,682-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.100072s
+2021-04-22 11:15:46,685-[INFO]-logger.py-Unit_test-日志信息:接口返回message:用户不存在
+2021-04-22 11:15:46,691-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20150
+2021-04-22 11:15:47,721-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 11:15:47,724-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:16:03,065-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2BHTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:16:03,076-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:16:03,084-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:16:03,513-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:16:03,526-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:16:03,529-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/envk8s/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:16:03,913-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '85771f5f46c912a006d46b105c0b1827', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '85771f5f46c912a006d46b105c0b1827', 'uid': '17200000090'}
+2021-04-22 11:16:03,915-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 11:16:04,269-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-04-22 11:16:04,271-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.740593s
+2021-04-22 11:16:04,273-[INFO]-logger.py-Unit_test-日志信息:接口返回message:None
+2021-04-22 11:16:04,275-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-04-22 11:16:04,278-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': None, 'time': 0.740593, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-22 11:16:05,358-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 11:16:05,360-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 11:22:42,818-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 11:22:42,829-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 11:22:42,836-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 11:22:43,275-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 11:22:43,289-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 11:22:43,291-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 11:22:43,375-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'b5b55ce8210411505e6570cd104a97b6', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'b5b55ce8210411505e6570cd104a97b6', 'uid': '17200000090'}
+2021-04-22 11:22:43,378-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 11:22:43,408-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20150', 'errorMsg': '用户不存在', 'result': None, 'success': False}
+2021-04-22 11:22:43,410-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.116908s
+2021-04-22 11:22:43,412-[INFO]-logger.py-Unit_test-日志信息:接口返回message:用户不存在
+2021-04-22 11:22:43,419-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20150
+2021-04-22 11:22:44,460-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 11:22:44,462-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 14:58:50,091-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 14:58:50,103-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 14:58:50,110-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 14:58:50,570-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 14:58:50,584-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 14:58:50,587-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 14:58:50,979-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'b5b55ce8210411505e6570cd104a97b6', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'b5b55ce8210411505e6570cd104a97b6', 'uid': '17200000090'}
+2021-04-22 14:58:50,982-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 14:58:51,006-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '20150', 'errorMsg': '用户不存在', 'result': None, 'success': False}
+2021-04-22 14:58:51,008-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.418608s
+2021-04-22 14:58:51,010-[INFO]-logger.py-Unit_test-日志信息:接口返回message:用户不存在
+2021-04-22 14:58:51,016-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：20150
+2021-04-22 14:58:52,108-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 14:58:52,111-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 15:24:10,507-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 15:24:10,519-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[3],区间[211, 217]
+2021-04-22 15:24:10,526-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 15:24:10,961-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 15:24:10,986-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 15:24:10,988-[INFO]-logger.py-Unit_test-日志信息:正在执行第3条用例:获取家庭成员信息-成功——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/family/member/822；method：GET；data：{}；sql：{}
+2021-04-22 15:24:11,238-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'b5b55ce8210411505e6570cd104a97b6', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'b5b55ce8210411505e6570cd104a97b6', 'uid': '17200000090'}
+2021-04-22 15:24:11,241-[INFO]-logger.py-httpRequest-日志信息:现在开始进行GET方法调用请求
+2021-04-22 15:24:11,376-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': None, 'success': True}
+2021-04-22 15:24:11,379-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.387752s
+2021-04-22 15:24:11,381-[INFO]-logger.py-Unit_test-日志信息:接口返回message:None
+2021-04-22 15:24:11,384-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-04-22 15:24:11,386-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': None, 'time': 0.387752, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-22 15:24:12,490-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 15:24:12,492-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 21:12:36,625-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 21:12:36,635-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[55],区间[211, 217]
+2021-04-22 21:12:36,643-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 21:12:37,023-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 21:12:37,038-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 21:12:37,041-[INFO]-logger.py-Unit_test-日志信息:正在执行第55条用例:创建订单V2——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wx/api/market/trade/v2/create；method：POST；data：{"itemDpList":[{"goodsSkuId":3413,"count":1}],"packDpList":[],"payAmount":"0.01","tradeChannel":2,"ext":"{\"groupUserCardId\":\"33150\",\"tradeGroupCardBindType\":\"1\",\"hostTradeId\":\"TJTC2020110616510108641\",\"examinationReservePo\":{\"examSuitPkgId\":\"\",\"userId\":17200000090},\"selfSelectedItems\":\"\"}","userCouponId":"","tradeType":300,"tradeOS":2,"tradeSource":''}；sql：{}
+2021-04-22 21:12:37,116-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'f40a91f2741743d9fab2fc38c2ea16ce', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'f40a91f2741743d9fab2fc38c2ea16ce', 'uid': '17200000090'}
+2021-04-22 21:12:37,120-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-22 21:12:37,197-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '1055', 'errorMsg': '当前购买的加项已经在当前订单中购买过', 'result': {}, 'success': False}
+2021-04-22 21:12:37,199-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.156396s
+2021-04-22 21:12:37,201-[INFO]-logger.py-Unit_test-日志信息:接口返回message:当前购买的加项已经在当前订单中购买过
+2021-04-22 21:12:37,207-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：1055
+2021-04-22 21:12:37,540-[ERROR]-logger.py-writeExcel-日志信息:数据写入失败！[Errno 13] Permission denied: 'F:\\interface_auto_cases\\test_data\\Sheet1.xlsx'
+2021-04-22 21:12:37,542-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 21:16:59,111-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 21:16:59,124-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[55],区间[211, 217]
+2021-04-22 21:16:59,130-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 21:16:59,409-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 21:16:59,423-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 21:16:59,425-[INFO]-logger.py-Unit_test-日志信息:正在执行第55条用例:创建订单V2——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wx/api/market/trade/v2/create；method：POST；data：{"itemDpList":[{"goodsSkuId":3413,"count":1}],"packDpList":[],"payAmount":"0.01","tradeChannel":2,"ext":"{\"groupUserCardId\":\"33150\",\"tradeGroupCardBindType\":\"1\",\"hostTradeId\":\"TJTC2020110616510108641\",\"examinationReservePo\":{\"examSuitPkgId\":\"\",\"userId\":17200000090},\"selfSelectedItems\":\"\"}","userCouponId":"","tradeType":300,"tradeOS":2,"tradeSource":''}；sql：{}
+2021-04-22 21:16:59,505-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': 'f40a91f2741743d9fab2fc38c2ea16ce', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': 'f40a91f2741743d9fab2fc38c2ea16ce', 'uid': '17200000090'}
+2021-04-22 21:16:59,508-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-22 21:16:59,591-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '1055', 'errorMsg': '当前购买的加项已经在当前订单中购买过', 'result': {}, 'success': False}
+2021-04-22 21:16:59,593-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.166118s
+2021-04-22 21:16:59,595-[INFO]-logger.py-Unit_test-日志信息:接口返回message:当前购买的加项已经在当前订单中购买过
+2021-04-22 21:16:59,600-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：1055
+2021-04-22 21:16:59,910-[ERROR]-logger.py-writeExcel-日志信息:数据写入失败！[Errno 13] Permission denied: 'F:\\interface_auto_cases\\test_data\\Sheet1.xlsx'
+2021-04-22 21:16:59,912-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 21:42:50,565-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 21:42:50,578-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[55],区间[211, 217]
+2021-04-22 21:42:50,585-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 21:42:50,845-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 21:42:50,860-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 21:42:50,862-[INFO]-logger.py-Unit_test-日志信息:正在执行第55条用例:创建订单V2——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wx/api/market/trade/v2/create；method：POST；data：{"itemDpList":[{"goodsSkuId":3413,"count":1}],"packDpList":[],"payAmount":"0.01","tradeChannel":2,"ext":"{\"groupUserCardId\":\"33150\",\"tradeGroupCardBindType\":\"1\",\"hostTradeId\":\"TJTC2020110616510108641\",\"examinationReservePo\":{\"examSuitPkgId\":\"\",\"userId\":17200000090},\"selfSelectedItems\":\"\"}","userCouponId":"","ecardNos":[],"ecardSelectType":"-1","tradeType":300,"tradeOS":2,"tradeSource":''}；sql：{}
+2021-04-22 21:42:50,950-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '15a4af1c1aef4aa7744580ecb96b0d94', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '15a4af1c1aef4aa7744580ecb96b0d94', 'uid': '17200000090'}
+2021-04-22 21:42:50,953-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-22 21:42:51,036-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '1055', 'errorMsg': '当前购买的加项已经在当前订单中购买过', 'result': {}, 'success': False}
+2021-04-22 21:42:51,038-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.171953s
+2021-04-22 21:42:51,040-[INFO]-logger.py-Unit_test-日志信息:接口返回message:当前购买的加项已经在当前订单中购买过
+2021-04-22 21:42:51,045-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：1055
+2021-04-22 21:42:51,351-[ERROR]-logger.py-writeExcel-日志信息:数据写入失败！[Errno 13] Permission denied: 'F:\\interface_auto_cases\\test_data\\Sheet1.xlsx'
+2021-04-22 21:42:51,353-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 21:43:40,909-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 21:43:40,921-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[55],区间[211, 217]
+2021-04-22 21:43:40,929-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 21:43:41,204-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 21:43:41,219-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 21:43:41,221-[INFO]-logger.py-Unit_test-日志信息:正在执行第55条用例:创建订单V2——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wx/api/market/trade/v2/create；method：POST；data：{"itemDpList":[{"goodsSkuId":3413,"count":1}],"packDpList":[],"payAmount":"0.01","tradeChannel":2,"ext":"{\"groupUserCardId\":\"63049\",\"tradeGroupCardBindType\":\"1\",\"hostTradeId\":\"TJTC20210422213706799300\",\"examinationReservePo\":{\"examSuitPkgId\":\"\",\"userId\":17200000090},\"selfSelectedItems\":[]}","userCouponId":"","ecardNos":[],"ecardSelectType":"-1","tradeType":300,"tradeOS":2,"tradeSource":""}；sql：{}
+2021-04-22 21:43:41,297-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '15a4af1c1aef4aa7744580ecb96b0d94', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '15a4af1c1aef4aa7744580ecb96b0d94', 'uid': '17200000090'}
+2021-04-22 21:43:41,300-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-22 21:43:41,439-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'errorGoods': None, 'inquiryReserveTime': None, 'inquiryUrl': None, 'needPay': 1, 'reportReserveTime': None, 'reserveId': 25089, 'reserveType': 2, 'reserveUrl': None, 'selfSelectedItemName': None, 'tradeId': 'JQJX20210422214341308320', 'tradeResult': 'CREATE_TRADE_SUCCESS'}, 'success': True}
+2021-04-22 21:43:41,445-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.218992s
+2021-04-22 21:43:41,449-[INFO]-logger.py-Unit_test-日志信息:接口返回message:{'errorGoods': None, 'inquiryReserveTime': None, 'inquiryUrl': None, 'needPay': 1, 'reportReserveTime': None, 'reserveId': 25089, 'reserveType': 2, 'reserveUrl': None, 'selfSelectedItemName': None, 'tradeId': 'JQJX20210422214341308320', 'tradeResult': 'CREATE_TRADE_SUCCESS'}
+2021-04-22 21:43:41,454-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-04-22 21:43:41,458-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': {'errorGoods': None, 'inquiryReserveTime': None, 'inquiryUrl': None, 'needPay': 1, 'reportReserveTime': None, 'reserveId': 25089, 'reserveType': 2, 'reserveUrl': None, 'selfSelectedItemName': None, 'tradeId': 'JQJX20210422214341308320', 'tradeResult': 'CREATE_TRADE_SUCCESS'}, 'time': 0.218992, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-22 21:43:41,755-[ERROR]-logger.py-writeExcel-日志信息:数据写入失败！[Errno 13] Permission denied: 'F:\\interface_auto_cases\\test_data\\Sheet1.xlsx'
+2021-04-22 21:43:41,757-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 21:45:31,009-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 21:45:31,021-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[55],区间[211, 217]
+2021-04-22 21:45:31,028-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 21:45:31,296-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 21:45:31,322-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 21:45:31,325-[INFO]-logger.py-Unit_test-日志信息:正在执行第55条用例:创建订单V2——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wx/api/market/trade/v2/create；method：POST；data：{"itemDpList":[{"goodsSkuId":3413,"count":1}],"packDpList":[],"payAmount":"0.01","tradeChannel":2,"ext":"{\"groupUserCardId\":\"33150\",\"tradeGroupCardBindType\":\"1\",\"hostTradeId\":\"TJTC2020110616510108641\",\"examinationReservePo\":{\"examSuitPkgId\":\"\",\"userId\":17200000090},\"selfSelectedItems\":\"\"}","userCouponId":"","ecardNos":[],"ecardSelectType":"-1","tradeType":300,"tradeOS":2,"tradeSource":''}；sql：{}
+2021-04-22 21:45:31,412-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '15a4af1c1aef4aa7744580ecb96b0d94', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '15a4af1c1aef4aa7744580ecb96b0d94', 'uid': '17200000090'}
+2021-04-22 21:45:31,414-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-22 21:45:31,493-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '1055', 'errorMsg': '当前购买的加项已经在当前订单中购买过', 'result': {}, 'success': False}
+2021-04-22 21:45:31,495-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.166323s
+2021-04-22 21:45:31,498-[INFO]-logger.py-Unit_test-日志信息:接口返回message:当前购买的加项已经在当前订单中购买过
+2021-04-22 21:45:31,503-[WARNING]-logger.py-Unit_test-日志信息:用例code比对失败！实际返回：1055
+2021-04-22 21:45:31,809-[ERROR]-logger.py-writeExcel-日志信息:数据写入失败！[Errno 13] Permission denied: 'F:\\interface_auto_cases\\test_data\\Sheet1.xlsx'
+2021-04-22 21:45:31,811-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 21:57:14,699-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 21:57:14,710-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[55],区间[211, 217]
+2021-04-22 21:57:14,716-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 21:57:14,984-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 21:57:14,998-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 21:57:15,000-[INFO]-logger.py-Unit_test-日志信息:正在执行第55条用例:创建订单V2——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/wx/api/market/trade/v2/create；method：POST；data：{"itemDpList":[{"goodsSkuId":3413,"count":1}],"packDpList":[],"payAmount":"0.01","tradeChannel":2,"ext":"{\"groupUserCardId\":\"63049\",\"tradeGroupCardBindType\":\"1\",\"hostTradeId\":\"TJTC20210422213706799300\",\"examinationReservePo\":{\"examSuitPkgId\":\"\",\"userId\":17200000090},\"selfSelectedItems\":[]}","userCouponId":"","ecardNos":[],"ecardSelectType":"-1","tradeType":300,"tradeOS":2,"tradeSource":""}；sql：{}
+2021-04-22 21:57:15,083-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '15a4af1c1aef4aa7744580ecb96b0d94', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '15a4af1c1aef4aa7744580ecb96b0d94', 'uid': '17200000090'}
+2021-04-22 21:57:15,088-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-22 21:57:18,042-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'errorGoods': None, 'inquiryReserveTime': None, 'inquiryUrl': None, 'needPay': 1, 'reportReserveTime': None, 'reserveId': 25089, 'reserveType': 2, 'reserveUrl': None, 'selfSelectedItemName': None, 'tradeId': 'JQJX20210422215717144521', 'tradeResult': 'CREATE_TRADE_SUCCESS'}, 'success': True}
+2021-04-22 21:57:18,044-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 3.040634s
+2021-04-22 21:57:18,046-[INFO]-logger.py-Unit_test-日志信息:接口返回message:{'errorGoods': None, 'inquiryReserveTime': None, 'inquiryUrl': None, 'needPay': 1, 'reportReserveTime': None, 'reserveId': 25089, 'reserveType': 2, 'reserveUrl': None, 'selfSelectedItemName': None, 'tradeId': 'JQJX20210422215717144521', 'tradeResult': 'CREATE_TRADE_SUCCESS'}
+2021-04-22 21:57:18,049-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-04-22 21:57:18,052-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': {'errorGoods': None, 'inquiryReserveTime': None, 'inquiryUrl': None, 'needPay': 1, 'reportReserveTime': None, 'reserveId': 25089, 'reserveType': 2, 'reserveUrl': None, 'selfSelectedItemName': None, 'tradeId': 'JQJX20210422215717144521', 'tradeResult': 'CREATE_TRADE_SUCCESS'}, 'time': 3.040634, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-22 21:57:18,917-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 21:57:18,920-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
+2021-04-22 21:57:30,514-[INFO]-logger.py-readExcel-日志信息:当前环境===｛H2B2HTTP｝===（0全部执行，1指定接口，2区间接口）用例执行模式：【 1 】
+2021-04-22 21:57:30,526-[INFO]-logger.py-readExcel-日志信息:配置用例列表：指定[152],区间[211, 217]
+2021-04-22 21:57:30,533-[INFO]-logger.py-Unit_test-日志信息:当前使用的用例集表单：F端及微信单接口
+2021-04-22 21:57:30,970-[INFO]-logger.py-readExcel-日志信息:获取表单成功：<Worksheet "Sheet1">
+2021-04-22 21:57:30,983-[INFO]-logger.py-Unit_test-日志信息:============我要开始测试了===============
+2021-04-22 21:57:30,985-[INFO]-logger.py-Unit_test-日志信息:正在执行第152条用例:创建订单V2——当前请求内容_URL：http://management-fed-gray.helianhealth.com/h2b2th/healthmanage-web/app/market/trade/v2/create；method：POST；data：{"itemDpList":[{"goodsSkuId":3413,"count":1}],"packDpList":[],"payAmount":"0.01","tradeChannel":2,"ext":"{\"groupUserCardId\":\"63049\",\"tradeGroupCardBindType\":\"1\",\"hostTradeId\":\"TJTC20210422213706799300\",\"examinationReservePo\":{\"examSuitPkgId\":\"\",\"userId\":17200000090},\"selfSelectedItems\":[]}","userCouponId":"","ecardNos":[],"ecardSelectType":"-1","tradeType":300,"tradeOS":2,"tradeSource":""}；sql：{}
+2021-04-22 21:57:31,055-[INFO]-logger.py-all_method-日志信息:登录请求返回：{'code': '0', 'errorMsg': '', 'result': {'card_id': None, 'cellnumber': '15258814180', 'img_url': 'https://file.helianhealth.com/userPic/2020/09/23/de1780bd71fb4026b3542f30b1c5713b.jpeg', 'nick_name': '羊4180', 'real_name': '羊', 'reg_company': None, 'reg_user_type': 0, 'sex': None, 'token': '15a4af1c1aef4aa7744580ecb96b0d94', 'user_level': None, 'userid': '17200000090'}, 'success': True}===>公共header返回：{'deviceId': 'Android-3806ba3c-be48-409e-b1d2-76d517348a64', 'os': '1', 'version': '8.1.3', 'imei': '864551031854596', 'from': '1', 'mac': 'f4:70:ab:60:1e:ea', 'openId': 'oh02_51tYh6ybCZJgQ0LYtbb35bI', 'token': '15a4af1c1aef4aa7744580ecb96b0d94', 'uid': '17200000090'}
+2021-04-22 21:57:31,059-[INFO]-logger.py-httpRequest-日志信息:现在开始进行post,body格式请求
+2021-04-22 21:57:31,348-[INFO]-logger.py-httpRequest-日志信息:请求返回：{'code': '0', 'errorMsg': '', 'result': {'errorGoods': None, 'inquiryReserveTime': None, 'inquiryUrl': None, 'needPay': 1, 'reportReserveTime': None, 'reserveId': 25089, 'reserveType': 2, 'reserveUrl': None, 'selfSelectedItemName': None, 'tradeId': 'JQJX20210422215731145796', 'tradeResult': 'CREATE_TRADE_SUCCESS'}, 'success': True}
+2021-04-22 21:57:31,351-[INFO]-logger.py-Unit_test-日志信息:Testing complete in 0.36324s
+2021-04-22 21:57:31,353-[INFO]-logger.py-Unit_test-日志信息:接口返回message:{'errorGoods': None, 'inquiryReserveTime': None, 'inquiryUrl': None, 'needPay': 1, 'reportReserveTime': None, 'reserveId': 25089, 'reserveType': 2, 'reserveUrl': None, 'selfSelectedItemName': None, 'tradeId': 'JQJX20210422215731145796', 'tradeResult': 'CREATE_TRADE_SUCCESS'}
+2021-04-22 21:57:31,356-[INFO]-logger.py-Unit_test-日志信息:用例code比对成功！实际返回:0
+2021-04-22 21:57:31,358-[INFO]-logger.py-Unit_test-日志信息:返回数据写入excel：{'data': {'errorGoods': None, 'inquiryReserveTime': None, 'inquiryUrl': None, 'needPay': 1, 'reportReserveTime': None, 'reserveId': 25089, 'reserveType': 2, 'reserveUrl': None, 'selfSelectedItemName': None, 'tradeId': 'JQJX20210422215731145796', 'tradeResult': 'CREATE_TRADE_SUCCESS'}, 'time': 0.36324, 'code': '0', 'result': 'pass', 'sql_result': 'pass'}
+2021-04-22 21:57:32,436-[INFO]-logger.py-writeExcel-日志信息:执行写入excel成功！
+2021-04-22 21:57:32,438-[INFO]-logger.py-Unit_test-日志信息:===============我要结束测试了！==================
